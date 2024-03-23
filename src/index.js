@@ -25,16 +25,3 @@ root.render(
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals(); 
 
-{/*import {store} from '../src/store/store'; 
-import { Provider } from 'react-redux';
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(  
-  <StrictMode>
-  <Provider store={store}>
-  
-    <App />
-  
-  </Provider> 
- </StrictMode>
-);
- */}
