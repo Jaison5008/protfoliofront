@@ -1,7 +1,8 @@
 import React, { Fragment } from 'react'
 import {VscHome} from 'react-icons/vsc'
 import {FiUser} from 'react-icons/fi'
-import {BsCode} from 'react-icons/bs'
+import {BsCode,BsCollectionFill } from 'react-icons/bs' 
+
 import { MdOutlineContactPage, } from 'react-icons/md'
 import {AiFillLinkedin,  AiFillGithub, AiOutlineUnorderedList} from 'react-icons/ai'
 
@@ -31,6 +32,11 @@ function Sidebar() {
                         <li className="nav-item">
                             <NavLink to="/skills" className="nav-link align-middle px-0 text-white">
                                 <BsCode className='fs-5'/> <span className="ms-1 d-none d-sm-inline ">Skills</span>
+                            </NavLink>
+                        </li> 
+                        <li className="nav-item">
+                            <NavLink to="/protfolio" className="nav-link align-middle px-0 text-white">
+                                <BsCollectionFill  className='fs-5'/> <span className="ms-1 d-none d-sm-inline ">Protfolio</span>
                             </NavLink>
                         </li>
                         

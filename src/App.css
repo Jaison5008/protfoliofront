@@ -1,22 +1,4 @@
-/* 
-    Color Scheme:
-    Get your favourite theme here: https://colorhunt.co/ and change all occurrences of below colors
-    
-        #1A1A2E Black
-        #16213E Dark Blue
-        #0F3460 Blue
-        #E94560 Red 
 
-    Fonts:
-    https://fonts.google.com/
-
-    go to google fonts and select one regular and one bold font and replpace the import url
-    change font-family in 
-        html, body
-        ff-jose
-        font-big
-
-*/
 
 
 @import url('https://fonts.googleapis.com/css2?family=Jost&family=Quicksand&display=swap');

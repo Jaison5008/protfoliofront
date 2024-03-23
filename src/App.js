@@ -5,22 +5,29 @@ import Home from './components/Home';
 import Sidebar from './components/Sidebar';
 import Skills from './components/Skills';
 import Resume from './components/Resume';
+import Protfolio from './components/Protfolio';
 
+  import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
   return (
     <div className="app-container container-fluid">
       <div className="row flex-nowrap">
+      
+        <Sidebar></Sidebar> 
         
-        <Sidebar></Sidebar>
-        <Routes>
+        <Routes> 
+        
           <Route path="/" element={ <Home/> } exact></Route>
           <Route path="/about" element={<About/>}></Route>
-          <Route path="/skills" element={<Skills/>}></Route>
-          <Route path="/resume" element={<Resume/>}></Route>
+          <Route path="/skills" element={<Skills/>}></Route> 
+          <Route path="/protfolio" element={<Protfolio/>}></Route> 
           
+          <Route path="/resume" element={<Resume/>}></Route> 
+         
         </Routes>
-
+        
+          
       </div>
     </div>
   );

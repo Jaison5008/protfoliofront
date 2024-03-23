@@ -1,15 +1,15 @@
 import React, { Fragment, useState } from 'react'
 import {AiFillMail,  AiFillPhone} from 'react-icons/ai'
 import { useDispatch } from 'react-redux'; 
-import { addUserThunk } from '../slice/userSlice';  
+import { addUserThunk } from '../slice/userSlice';   
+import { ToastContainer ,toast} from 'react-toastify';
 function Resume() { 
     const dispatch=useDispatch()
 const [name ,setName]=useState('')
 const [email ,setEmail]=useState('') 
 const [phone ,setPhone]=useState('') 
 const [message,setMessage]=useState('') 
-const [error,setError]=useState(''); 
-const [sucess,setSucess]=useState('')
+
 const submiting=async(e)=>{   
     e.preventDefault()
     if(name&&email&&phone&&message){
@@ -19,10 +19,12 @@ const submiting=async(e)=>{
    setPhone('') 
    setMessage('')
    if(response){ 
-    setSucess('post sucess!!!')
-   }else{setError(response.data.error)}
+   toast.success('post sucess!!!')
+
+   
+   }else{toast.error(response.data.error)}
     }else{ 
-      setError('pls enter all fields')
+     toast.error('pls enter all fields')
     }
   }
   return (
@@ -69,7 +71,8 @@ const submiting=async(e)=>{
                         </ul>
 
                     </div> 
-                    <div className="col-md-6">
+                    <div className="col-md-6"> 
+                    <ToastContainer/>
                         <h4 className="ff-jose ls-2">Get in Toch</h4>
                         <form action="" className="site-form">
 						
@@ -84,12 +87,14 @@ const submiting=async(e)=>{
 						</div>
 						<div className="form-group mb-2">
 							<textarea className="form-control px-1 py-2"cols="6" rows="4" placeholder="Write a Message"  value={message} onChange={(e)=>setMessage(e.target.value)}></textarea>
-						</div>
+						</div> 
+                       
 						<div className="form-group">
 							<input type="submit" className="blue-label text-white px-1 py-2" onClick={submiting}/>
 						</div>
 					</form>
-                    </div>
+                    </div> 
+                    
                 </div>
 
                 <hr></hr>
