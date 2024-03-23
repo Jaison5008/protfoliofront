@@ -2,7 +2,7 @@ import React, { Fragment, useState } from 'react'
 import {AiFillMail,  AiFillPhone} from 'react-icons/ai'
 import { useDispatch } from 'react-redux'; 
 import { addUserThunk } from '../slice/userSlice';   
-import { toast} from 'react-toastify';
+
 function Resume() { 
     const dispatch=useDispatch()
 const [name ,setName]=useState('')
@@ -19,12 +19,12 @@ const submiting=async(e)=>{
    setPhone('') 
    setMessage('')
    if(response){ 
-   toast.success('post sucess!!!')
+   alert('post sucess!!!')
 
    
-   }else{toast.error(response.data.error)}
+   }else{alert(response.data.error)}
     }else{ 
-     toast.error('pls enter all fields')
+     alert('pls enter all fields')
     }
   }
   return (
