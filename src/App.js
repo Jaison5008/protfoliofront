@@ -7,7 +7,7 @@ import Skills from './components/Skills';
 import Resume from './components/Resume';
 import Protfolio from './components/Protfolio';
 
-  import 'react-toastify/dist/ReactToastify.css';
+  
 
 function App() {
   return (
