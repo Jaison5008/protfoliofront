@@ -2,7 +2,7 @@ import React, { Fragment, useState } from 'react'
 import {AiFillMail,  AiFillPhone} from 'react-icons/ai'
 import { useDispatch } from 'react-redux'; 
 import { addUserThunk } from '../slice/userSlice';   
-import { ToastContainer ,toast} from 'react-toastify';
+import { toast} from 'react-toastify';
 function Resume() { 
     const dispatch=useDispatch()
 const [name ,setName]=useState('')
@@ -72,7 +72,7 @@ const submiting=async(e)=>{
 
                     </div> 
                     <div className="col-md-6"> 
-                    <ToastContainer/>
+                   
                         <h4 className="ff-jose ls-2">Get in Toch</h4>
                         <form action="" className="site-form">
 						
