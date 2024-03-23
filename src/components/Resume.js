@@ -30,7 +30,7 @@ const submiting=async(e)=>{
   return (
     <Fragment>
         <div className="col p-4"> 
-            <div className="p-4 bg-dark slide-in-top">
+            <div className="p-4 bg-dark ">
                 
                 <div className="row">
                     <div className="col-md-6">
