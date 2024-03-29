@@ -32,16 +32,23 @@ const submiting=async(e)=>{
         <div className="col p-4"> 
             <div className="p-4 bg-dark ">
                 
-                <div className="row">
-                    <div className="col-md-6">
+                <div className="row" style={{justifyContent:'center',alignItems:'center'}}>
+                    <div className="col-md-3">
                         <h2 className="ff-jose fw-bold ls-2">Jaison M</h2>
-                    </div> 
+                    </div>   
+                   
                     <div className="col-md-4">
                         <h5 className="ff-jose fw-bold ls-1 "><AiFillMail className='fs-5 mx-2'/>jaison.eee@gmail.com</h5>
                     </div>
                     <div className="col-md-2">
                         <h5 className="ff-jose fw-bold ls-1"><AiFillPhone className='fs-5 mx-2'/>9790800129</h5>
-                    </div>
+                    </div> 
+
+                    <div className="col-md-3">
+                    <button className='mx-2 my-3 border rounded py-1 px-2 mw-fc'>
+                                    <a  className= "text-black" href="https://drive.google.com/file/d/1-PZ7GDJ-rvDduiWO7v5GQhUwjNpkduWp/view?usp=sharing" target="/blank">RESUME-LINK</a>
+                                </button> 
+                                </div>
                 </div>
                 <hr></hr>
                 <div className="row">
@@ -50,12 +57,7 @@ const submiting=async(e)=>{
                         
                         <h4 className="ff-jose ls-1">EDUCATION</h4>
                         <ul> 
-                        <li>
-                                <h4 className="ff-jose my-1 text-red">FULL STACK DEVELOPMENT PROGRAME</h4>
-                                <h6 className="blue-label px-1 py-1">2023</h6> 
-                                <p className="m-0">GUVI</p>
-                                
-                            </li>
+                       
                             <li>
                                 <h4 className="ff-jose my-1 text-red">BE - Electrical and Electronics Engineering</h4>
                                 <h6 className="blue-label px-1 py-1">2007 - 2011</h6> 
@@ -66,6 +68,16 @@ const submiting=async(e)=>{
                                 <h4 className="ff-jose my-1 text-red">Higher Secondary School</h4>
                                 <h6 className="blue-label px-1 py-1">2007</h6>
                                 <p className="m-0">P C K G GOVT HR SEC SCHOOL</p>
+                                
+                            </li>  
+                            </ul>
+
+                            <h4 className="ff-jose ls-1">CERTIFICATIONS</h4>
+                        <ul> 
+                        <li>
+                                <h4 className="ff-jose my-1 text-red">FULL STACK DEVELOPMENT PROGRAME</h4>
+                                <h6 className="blue-label px-1 py-1">2023</h6> 
+                                <p className="m-0">GUVI</p>
                                 
                             </li>
                         </ul>

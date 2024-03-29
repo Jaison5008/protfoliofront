@@ -11,7 +11,7 @@ function Protfolio() {
 
 
 
-                    <div className="col-lg-6 col-md-12 col-sm-12  "> 
+                    <div className="col-lg-4 col-md-12 col-sm-12  "> 
                     <h3 className="font-medium text-red slide-in-top">Ticket booking App</h3>
                     
                     <img className="img-fluid" src="../images/ticket.png" alt="..."></img>
@@ -36,7 +36,7 @@ function Protfolio() {
                                 </div>
                         
                     </div>
-                    <div className="col-lg-6 col-md-12 col-sm-12 "> 
+                    <div className="col-lg-4 col-md-12 col-sm-12 "> 
                     <h3 className="font-medium text-red slide-in-top">Inventry  App</h3>
                     
                     <img className="img-fluid" src="../images/inventary.png" alt="..."></img>
@@ -65,7 +65,40 @@ function Protfolio() {
     
                            
                         
+                    </div> 
+                    <div className="col-lg-4 col-md-12 col-sm-12 "> 
+                    <h3 className="font-medium text-red slide-in-top">Knowledge Sharing App</h3>
+                    
+                    <img className="img-fluid" src="../images/project3.png" alt="..."></img>
+                    <div className='d-flex'>
+                    <button className='mx-2 my-3 border rounded py-1 px-2 mw-fc'>
+                                    <a  className= "text-black" href="https://front-stack-lake.vercel.app/" target="/blank">URL-LINK</a>
+                                </button>
+                                <button className='mx-2 my-3 border rounded py-1 px-2 mw-fc'>
+                                    <a className='text-black' href='https://github.com/Jaison5008/front-stack.git' target='/blank'>Front-End Code</a>
+                                </button>
+                                <button className='mx-2 my-3 border rounded py-1 px-2 mw-fc'>
+                                    <a className='text-black' href='https://github.com/Jaison5008/stack-back.git' target='/blank'>Back-End Code</a>
+                                </button>  
+                                </div>
+                                <div className='mx-2 my-3 border rounded py-1 px-2 mw-fc'>
+                                    <p>"I developed a full-stack knowledge sharing  
+                                      application using React ,Redux,for the frontend, 
+                                      Bootstrap for responsive design,
+                                       Node.js for the backend, 
+                                       and MongoDB for database management. 
+                                       This project allowed me to gain hands-on experience in building scalable
+                                        and efficient web applications. I implemented features such as user authentication, 
+                                        data storage, and CRUD operations to manage inventory effectively.
+                                   </p>
+                                </div>
+    
+                           
+                        
                     </div>
+
+
+
 
             </div> 
             </div> 
